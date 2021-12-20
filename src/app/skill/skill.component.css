@@ -1,66 +1,88 @@
-@media screen and (min-width: 100px){
+@media screen and (min-width: 0px){
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        padding: 0px;
+        margin: 0 15px 0 15px;
+    }
+}
+
+@media screen and (min-width: 158px){
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 0px;
+        margin: 0 15px 0 15px;
+    }
+}
+
+@media screen and (min-width: 260px){
     .container{
         display: flex;
         justify-content: center;
         width: 50px;
-        height: 50x;
+        height: 50px;
         padding: 0px;
-        margin: 2vh 15px 0 15px;
+        margin: 0 15px 0 15px;
     }
 }
 
-@media screen and (min-width: 250px){
+@media screen and (min-width: 300px){
     .container{
         display: flex;
         justify-content: center;
         width: 50px;
-        height: 50x;
+        height: 50px;
         padding: 0px;
-        margin: 2vh 15px 0 15px;
+        margin: 10px 10px 0 10px;
     }
 }
 
-@media screen and (min-width: 305px){
+@media screen and (min-width: 368px){
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        padding: 0px;
+        margin: 40px 10px 0 10px;
+    }
+}
+
+@media screen and (min-width: 420px){
     .container{
         display: flex;
         justify-content: center;
         width: 60px;
-        height: 60x;
+        height: 60px;
         padding: 0px;
-        margin: 3vh 18px 0 18px;
+        margin: 30px 10px 0 10px;
     }
 }
 
-@media screen and (min-width: 400px){
+@media screen and (min-width: 518px){
     .container{
         display: flex;
         justify-content: center;
         width: 70px;
         height: 70px;
         padding: 0px;
-        margin: 2.5vh 15px 0 15px;
+        margin: 20px 15px 0 15px;
     }
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 616px){
     .container{
         display: flex;
         justify-content: center;
-        width: 90px;
-        height: 90x;
+        width: 80px;
+        height: 80px;
         padding: 0px;
-        margin: 3vh 15px 0 15px;
-    }
-}
-
-@media screen and (min-width: 600px){
-    .container{
-        display: flex;
-        justify-content: center;
-        width: 100px;
-        height: 100x;
-        padding: 0px;
-        margin: 30px 20px 0 20px;
+        margin: 20px 20px 0 20px;
     }
 }
 
@@ -68,10 +90,10 @@
     .container{
         display: flex;
         justify-content: center;
-        width: 100px;
-        height: 100x;
+        width: 80px;
+        height: 80px;
         padding: 0px;
-        margin: 70px 20px 0 20px;
+        margin: 20px 20px 0 20px;
     }
 }
 
@@ -79,10 +101,10 @@
     .container{
         display: flex;
         justify-content: center;
-        width: 105px;
-        height: 105x;
+        width: 90px;
+        height: 90px;
         padding: 0px;
-        margin: 60px 30px 0 30px;
+        margin: 20px 30px 0 30px;
     }
 }
 
@@ -90,21 +112,21 @@
     .container{
         display: flex;
         justify-content: center;
-        width: 117.5px;
-        height: 117.5x;
+        width: 90px;
+        height: 90px;
         padding: 0px;
-        margin: 60px 40px 0 40px;
+        margin: 15px 33px 0 33px;
     }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1235px){
     .container{
         display: flex;
         justify-content: center;
-        width: 120px;
-        height: 120px;
+        width: 90px;
+        height: 90px;
         padding: 0px;
-        margin: 35px 56px 0 56px;
+        margin: 15px 42px 0 42px;
     }
 }
 
@@ -112,10 +134,10 @@
     .container{
         display: flex;
         justify-content: center;
-        width: 120px;
-        height: 120px;
+        width: 90px;
+        height: 90px;
         padding: 0px;
-        margin: 40px 78px 0 78px;
+        margin: 15px 50px 0 50px;
     }
 }
 
@@ -123,10 +145,10 @@
     .container{
         display: flex;
         justify-content: center;
-        width: 120px;
-        height: 120px;
+        width: 90px;
+        height: 90px;
         padding: 0px;
-        margin: 30px 100px 0 100px;
+        margin: 10px 70px 0 70px;
     }
 }
 
