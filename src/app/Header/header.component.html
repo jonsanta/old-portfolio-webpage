@@ -1,6 +1,6 @@
 <app-home [computer]="computer"></app-home>
 
-<nav id="start" (scroll)="onScroll()" [ngClass]="{'top': true, 'mobile': !computer, 'navbar': banner}">
+<nav (scroll)="onScroll()" [ngClass]="{'top': true, 'mobile': !computer, 'navbar': banner}">
   <div [@dropDownBar]="desplegableState" id="wrapper">
     <app-logo-nav-bar-item *ngIf="computer" class="logo"></app-logo-nav-bar-item>
 
@@ -9,10 +9,10 @@
     </app-logo-mobile-nav-bar-item>
 
     <div *ngIf="computer" class="left">
-      <a href="#info"><app-left-nav-bar-item content="Información"></app-left-nav-bar-item></a>
-      <a href="#skillsets"><app-left-nav-bar-item content="Habilidades"></app-left-nav-bar-item></a>
-      <a href="#projects"><app-left-nav-bar-item content="Proyectos"></app-left-nav-bar-item></a>
-      <a href="#contact"><app-left-nav-bar-item content="Contacto"></app-left-nav-bar-item></a>
+      <a (click)="scrollToAnchor('#info')"><app-left-nav-bar-item content="Información"></app-left-nav-bar-item></a>
+      <a (click)="scrollToAnchor('#skillsets')"><app-left-nav-bar-item content="Habilidades"></app-left-nav-bar-item></a>
+      <a (click)="scrollToAnchor('#projects')"><app-left-nav-bar-item content="Proyectos"></app-left-nav-bar-item></a>
+      <a (click)="scrollToAnchor('#contact')"><app-left-nav-bar-item content="Contacto"></app-left-nav-bar-item></a>
     </div>
 
     <app-right-nav-bar-item [ngClass]="{'right': computer, 'rightmobile': !computer}" [computer]="computer" [stickyMode]="banner"></app-right-nav-bar-item>

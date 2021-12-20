@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, HostListener} from '@angular/core';
-import * as $ from "jquery";
 
 @Component({
   selector: 'app-home',
@@ -24,17 +23,16 @@ export class HomeComponent implements OnInit {
     this.height = this.resizeHome();
   }
 
+  //resizes Home to window height or default value if too small
   resizeHome() : number
   {
     if(document.documentElement.clientHeight > 700) return document.documentElement.clientHeight;
     else return 700;
   }
 
-  //Jquery that will scroll to given ID tag in HTML
-  scrollToAnchor(id : String){
-    $('html, body').animate({
-      scrollTop: $(id).offset()!.top + 1
-      }, 300);
+  //scrolls to navbar
+  scrollToAnchor(){
+    window.scrollTo({top: this.height+1, behavior: 'smooth'});
   }
 
 }

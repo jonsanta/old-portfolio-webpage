@@ -12,6 +12,7 @@ import { LogoMobileNavBarItemComponent } from './Header/NavigationBar/logo-mobil
 import { RightNavBarItemComponent } from './Header/NavigationBar/right-nav-bar-item/right-nav-bar-item.component';
 import { DropdownitemComponent } from './Header/dropdownitem/dropdownitem.component';
 import { SkillComponent } from './skill/skill.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SkillComponent } from './skill/skill.component';
     LogoMobileNavBarItemComponent,
     RightNavBarItemComponent,
     DropdownitemComponent,
-    SkillComponent
+    SkillComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

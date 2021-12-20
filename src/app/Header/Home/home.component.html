@@ -3,7 +3,7 @@
     <div [ngClass]="{'home_content' : true, 'home_content_mobile' : !computer}">
         <div [ngClass]="{'logo' : computer, 'logo_mobile' : !computer}">
             <div [ngClass]="{'button' : true, 'button_mobile' : !computer}">
-                <a (click)="scrollToAnchor('#start')"><img src="assets/images/down.png"></a>
+                <a (click)="scrollToAnchor()"><img src="assets/images/down.png"></a>
             </div>
             <img src="assets/images/logo.png">
         </div>

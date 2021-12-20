@@ -1,6 +1,5 @@
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit, HostListener} from '@angular/core';
-import * as $ from "jquery";
 
 @Component({
   selector: 'app-header',
@@ -97,16 +96,24 @@ export class HeaderComponent implements OnInit{
     }
   }
 
-  //Jquery that will scroll to given ID tag in HTML
+  //Instant scroll to given element by ID
   scrollToAnchor(id : string){
+    let rect = document.querySelector(id)!.getBoundingClientRect().top;
+    let scrollTop = document.documentElement.scrollTop-50;
+
+    window.scrollTo({top: rect+scrollTop});
+
+    /*
+    //Jquery that will scroll to given ID tag in HTML -- JQUERY NOT NEEDED ANYMORE
     $('html, body').animate({
       scrollTop: $(id).offset()!.top -50
       }, 10);
+    */
   }
 
   @HostListener('window:scroll', ['$event']) // window scroll event
   onScroll() : void {
-    let height;
+    let height; 
     
     if(document.documentElement.clientHeight > 700) height = document.documentElement.clientHeight;
     else height = 700;
@@ -116,7 +123,7 @@ export class HeaderComponent implements OnInit{
   }
 
   @HostListener('window:resize', ['$event'])
-  detectMobile() : void{
+  detectMobile() : void{ //enables mobile mode for low width devices
     if(window.innerWidth < 900) this.computer = false;
     else{
       this.computer = true
