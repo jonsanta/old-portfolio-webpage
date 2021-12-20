@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+    background-color:grey;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-zoom: 150%;
+}
+
+@viewport {
+    min-zoom: 0.5;
+    max-zoom: 1.0
+  }

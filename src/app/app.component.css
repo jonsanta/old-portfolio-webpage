@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+    color: #353839;    
+    font-family: Montserrat , sans-serif;
+    background-color: #f0f0f0;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+#projects{
+    height: 100vh;
+}
+
+#projects p{
+    padding-top: 30px;
+}
+
+#skillsets{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1e90ff;
+    color: #f0f0f0;
+}
+
+#info h1{
+    font-size: 30px;
+    padding: 30px 0 10px 0;
+}
+
+#info p{
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+#contact{
+    color: #f0f0f0;
+    background-color: #1e90ff;
+}
+
+
+#contact p{
+    padding: 30px 0 120px 0;
+}
+
+#footer{
+    display: flex;
+    background-color: black;
+    color: #f0f0f0;
+    font-family: Montserrat , sans-serif;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+}
+
+.title p{
+    padding-top: 30px;
+}
+
+.skillcontent{
+    padding-top: 30px;
+    overflow: hidden;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 5px 0px;
+}
+
+@media (min-aspect-ratio: 8/5) {
+    
+    #info{
+        height: 300px;
+    }
+
+    #skillsets{
+        height: 500px;
+    }
+
+    #projects{
+        height: 800px;
+    }
+
+    #contact{
+        height: 250px;
+    }
+    
+    #footer{
+        height: 80px;
+    }
+}
+  
+@media (max-aspect-ratio: 3/2) {
+
+    #info{
+        height: 370px;
+        padding: 0 10px 0 10px;
+    }
+
+    #skillsets{
+        height: 550px;
+    }
+
+    #projects{
+        height: 850px;
+    }
+    
+    #contact{
+        height: 225px;
+    }
+
+    #footer{
+        height: 80px;
+    }
+}
+

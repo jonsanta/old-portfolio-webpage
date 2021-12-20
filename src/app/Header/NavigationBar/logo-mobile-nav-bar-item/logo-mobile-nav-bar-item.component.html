@@ -1,0 +1,4 @@
+<div (click)="onClick()" class="logomobile">
+    <img src="assets/images/logo.png">
+    <img [ngClass]="{'clicked': buttonClicked, 'notClicked': !buttonClicked}" src="assets/images/menu.png">
+</div>

@@ -1,0 +1,13 @@
+p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 0.6em;
+    height: 100%;
+    margin: 0px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:#353839;
+}
