@@ -1,17 +1,17 @@
 <div [ngStyle]="{'width' : fixedWidth+'px'}">
   <app-header></app-header>
-  <div class="sections">
+  <div id="sections">
     <div id="info">
       <h1>INFORMACIÓN</h1>
-      <p>Front-End Web developer y 5 años de experiencia con Unity3D y C# .</p>
-      <p>Siempre busco aprender nuevas tecnologias y mejorar las ya conocidas. Me defino como resolutivo y autodidacta.</p>
-      <p>Muchas ganas de trabajar en equipo.</p>
+      <div class="icontent">
+        <p>Front-End Web developer y 5 años de experiencia con Unity3D y C# .</p>
+        <p>Siempre busco aprender nuevas tecnologias y mejorar las ya conocidas. Me defino como resolutivo y autodidacta.</p>
+        <p>Muchas ganas de trabajar en equipo.</p>
+      </div>
     </div>
     <div id="skillsets">
-      <div class="title">
-        <p>HABILIDADES</p>
-      </div>
-      <div class="skillcontent">
+      <p>HABILIDADES</p>
+      <div class="scontent">
         <app-skill url="assets/images/skill/html5.png"></app-skill>
         <app-skill url="assets/images/skill/css3.png"></app-skill>
         <app-skill url="assets/images/skill/mongodb.png"></app-skill>
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div id="projects">
-      <p>PROYECTOS</p>
+      <p lang="es">PROYECTOS</p>
     </div>
     <app-contact id="contact"></app-contact>
   </div>

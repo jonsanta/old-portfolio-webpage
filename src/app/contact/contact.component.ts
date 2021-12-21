@@ -12,4 +12,21 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  OnClick($event : any)
+  { 
+
+    if($event.target.id == "email")
+    {
+      window.open("mailto:jon.santamaria1995@gmail.com?Subject=Job Contact", "_blank");
+    }
+    else if($event.target.id == "linkedin")
+    {
+      window.open("https://www.google.es", "_blank");
+    }
+    else if($event.target.id == "github")
+    {
+      window.open("https://github.com/jonsanta", "_blank");
+    }
+  }
+
 }
