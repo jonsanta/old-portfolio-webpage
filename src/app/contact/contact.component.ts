@@ -14,7 +14,6 @@ export class ContactComponent implements OnInit {
 
   OnClick($event : any)
   { 
-
     if($event.target.id == "email")
     {
       window.open("mailto:jon.santamaria1995@gmail.com?Subject=Job Contact", "_blank");
