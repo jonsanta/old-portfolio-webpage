@@ -1,13 +1,11 @@
 .title{
     height: 40%;
     width: 100%;
-    padding-bottom: 0px;
-    margin-bottom: 0;
 }
 
 .title p{
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin: 0;
+    padding: 40px 0 10px 0;
 }
 
 .content{
@@ -17,6 +15,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 #email{
