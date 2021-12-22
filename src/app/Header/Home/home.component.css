@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 .home{
     position: relative;
-    width: 100%;    
-    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    z-index: 3;
 }
 
 .home_background{
@@ -101,11 +102,11 @@
     width: 100%;
 }
 
-.tex_mobile{
+.text_mobile{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60%;
+    height: 40%;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -120,29 +121,31 @@ span{
     margin: 0px;
     padding: 0px;
     justify-content: center;
+    font-family: Montserrat , sans-serif;
+}
+
+.text_mobile span{
+    font-size: 25px;
 }
 
 span p{
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     padding: 0px;
-    font-weight: 700;
     text-align: center;
-    border-bottom: seashell 1px solid;
     font-size: 60px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .text_mobile span p{
-    width: 190px;
-    margin: 0 0 20px 0;
-    font-weight: 700;
-    text-align: center;
-    border-bottom: seashell 1px solid;
+    font-size: 42px;
+    margin: 0 0 10px 0;
 }
 
 p{
     margin: 0px;
     padding: 0px;
     text-align: center;
-    font-size: 20px; 
+    font-size: 15px;
+    font-family: Montserrat , sans-serif;
 }

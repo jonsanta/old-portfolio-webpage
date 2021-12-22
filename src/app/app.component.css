@@ -6,34 +6,45 @@
     height: auto;
     font-size: 30px;
     text-align: center;
-    color: #353839;    
+    color: black;  
     font-family: Montserrat , sans-serif;
     background-color: #ededed;
+    background-image: url("../assets/images/sectionsbg.png");
+    z-index: -1;
 }
 
-#info{
+#aboutme{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background-color: #f2f2f2;
+    opacity: 0.87;
 }
 
-#info h1{
-    padding-top: 30px;
-    font-size: 25px;
+#aboutme h2{
+    font-size: 30px;
+    padding: 60px 0 0 0;
     margin: 0;
+    text-align: center;
 }
 
-.icontent{
+#aboutme h3{
+    font-size: 27px;
+    padding: 5px 0 10px 0;
+    margin: 0;
+    text-align: center;
+}
+
+.abcontent{
     width: auto;
     display: inline-block;
-    text-align: left;
-    padding: 15px 30px 0 30px;
+    text-align: center;
 }
 
-.icontent p{
+.abcontent p{
     font-size: 15px;
-    padding-top: 5px;
+    padding: 10px 30px 0 30px;
     margin: 0px;
 }
 
@@ -42,10 +53,9 @@
     flex-direction: column;
     width: 100%;
     height: 350px;
-    background: rgb(178,178,214);
-    background: linear-gradient(180deg, rgba(178,178,214,1) 0%, 
-    rgba(162,162,208,1) 50%, rgba(178,178,214,1) 100%);
-    color: #f0f0f0;
+    background: #a2add0;
+    color: white;
+    opacity: 0.87;
 }
 
 #skillsets p{
@@ -70,6 +80,8 @@
 
 #projects{
     height: 800px;
+    background-color: #f2f2f2;
+    opacity: 0.87;
 }
 
 #projects p{
@@ -81,10 +93,9 @@ app-contact{
     flex-direction: column;
     width: 100%;
     height: 170px;
-    color: #f0f0f0;
-    background: rgb(178,178,214);
-    background: linear-gradient(180deg, rgba(178,178,214,1) 0%, 
-    rgba(162,162,208,1) 50%, rgba(178,178,214,1) 100%);
+    color: white;
+    background: #a2a2d0;
+    opacity: 0.87;
 }
 
 #footer{
@@ -92,27 +103,29 @@ app-contact{
     width: 100%;
     height: 80px;
     background-color: black;
-    color: #f0f0f0;
+    color: 	#dedede;
     font-family: Montserrat , sans-serif;
+    font-size: 9px;
     align-items: center;
     justify-content: center;
-    opacity: 0.6;
 }
+
 
 @media (min-aspect-ratio: 8/5) {
     
-    #info{
-        height: 300px;
+    #aboutme{
+        height: 325px;
     }
 
     #projects{
         height: 800px;
     }
 }
-  
+
+/*Desktop Aspect ratio*/
 @media (min-aspect-ratio: 1/2) {
 
-    #info{
+    #aboutme{
         height: 300px;
     }
 
@@ -122,10 +135,11 @@ app-contact{
 
 }
 
+/*Mobile device aspect ratio*/
 @media (max-aspect-ratio: 3/2) {
 
-    #info{
-        height: 300px;
+    #aboutme{
+        height: 380px;
     }
 
     #projects{
@@ -133,3 +147,22 @@ app-contact{
     }
 }
 
+
+/*ZOOM FIXES */
+@media screen and (max-height: 270px){ /* 300x zoom */
+    #aboutme{
+        height: 360px;
+    }
+}
+
+@media screen and (max-height: 200px){ /* 400x zoom */
+    #aboutme{
+        height: 425px;
+    }
+}
+
+@media screen and (max-height: 180px){ /* 500x zoom */
+    #aboutme{
+        height: 500px;
+    }
+}

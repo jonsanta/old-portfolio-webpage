@@ -10,24 +10,24 @@ import { Component, OnInit, HostListener} from '@angular/core';
       state('notvisible', style({
           'visibility': 'hidden',
           'transform': 'translateY(-10em)',
-          'z-index': '-1',
+          'z-index': '0',
           'color': 'transparent'
       })),
       state('visible', style({
         'visibility': 'visible',
         'transform': 'translateY(3.40em)',
-        'z-index': '0'
+        'z-index': '1'
       })),
       transition('notvisible => visible', animate('0.23s ease-in', keyframes([
         style({'visibility': 'hidden','transform': 'translateY(-10em)', offset: 0}),
         style({'visibility': 'visible','transform': 'translateY(3.40em)', offset: 0.9999}),
-        style({'z-index': '0', 'color': 'black', offset: 1})
+        style({'z-index': '1', 'color': 'black', offset: 1})
       ]))),
       transition('visible => notvisible', animate('0.23s ease-in', keyframes([
         style({'visibility': 'visible','transform': 'translateY(3.40em)', offset: 0}),
         style({'color': 'transparent' , offset: 0.7}),
         style({'visibility': 'hidden','transform': 'translateY(-10em)', offset: 0.99}),
-        style({'z-index': '-1', offset: 1})
+        style({'z-index': '0', offset: 1})
       ])))
     ]),
     

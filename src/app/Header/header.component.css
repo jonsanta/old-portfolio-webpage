@@ -4,6 +4,8 @@
     position: -webkit-sticky;
     position: sticky;
     top: -1px;
+    opacity: 1!important;
+    z-index: 2;
 }
 
 .top{
@@ -14,7 +16,7 @@
     font-family: Montserrat , sans-serif;
     font-size: 22px;
     color: #353839;
-    background-color: #ffffff;
+    background-color: #ffffff!important;
 }
 
 #wrapper{
@@ -26,6 +28,7 @@
     width: 100%;
     height: 100%;
     box-shadow: 1px 1px 10px 1.8px rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
 
 .mobile{
@@ -69,7 +72,7 @@
     color:#353839;
     font-size: 20px;
     transform: translateY(-10em);
-    z-index: -1;
+    z-index: 0;
 }
 
 a{
