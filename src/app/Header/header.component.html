@@ -2,12 +2,9 @@
 
 <nav (scroll)="onScroll()" [ngClass]="{'top': true, 'mobile': !computer, 'navbar': banner}">
   <div [@dropDownBar]="desplegableState" id="wrapper">
-    <app-logo-nav-bar-item *ngIf="computer" class="logo"></app-logo-nav-bar-item>
-
-    <app-logo-mobile-nav-bar-item *ngIf="!computer" class="logomobile" 
-    (clicked)="openMenu()" [buttonClicked]="dropdownshown">
-    </app-logo-mobile-nav-bar-item>
-
+    <app-logo-nav-bar-item [computer]="computer" class="logo" (clicked)="openMenu()" 
+    [buttonClicked]="dropdownshown"></app-logo-nav-bar-item>
+    
     <div *ngIf="computer" class="left">
       <a (click)="scrollToAnchor('#aboutme')"><app-left-nav-bar-item content="Información"></app-left-nav-bar-item></a>
       <a (click)="scrollToAnchor('#skillsets')"><app-left-nav-bar-item content="Habilidades"></app-left-nav-bar-item></a>
@@ -15,7 +12,7 @@
       <a (click)="scrollToAnchor('#contact')"><app-left-nav-bar-item content="Contacto"></app-left-nav-bar-item></a>
     </div>
 
-    <app-right-nav-bar-item [ngClass]="{'right': computer, 'rightmobile': !computer}" [computer]="computer" [stickyMode]="banner"></app-right-nav-bar-item>
+    <app-right-nav-bar-item class="right"></app-right-nav-bar-item>
 
     <div [@dropDown]="desplegableState" class="dropdownmenu">
       <a (click)="scrollToAnchor('#aboutme')"><app-dropdownitem (click)="dropdown()" content="Información"></app-dropdownitem></a>
@@ -24,5 +21,4 @@
       <a (click)="scrollToAnchor('#contact')"><app-dropdownitem (click)="dropdown()" content="Contacto"></app-dropdownitem></a>
     </div>
   </div>
-
 </nav>

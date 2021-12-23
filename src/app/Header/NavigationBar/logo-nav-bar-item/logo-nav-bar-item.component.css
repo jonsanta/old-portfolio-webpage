@@ -13,3 +13,23 @@ img{
     margin: 0px;
     padding: 0px;
 }
+
+.mobile{
+    width: 44px;
+    height: 42px;
+    margin-left: 10px;
+}
+
+.clicked{
+    width: 20px;
+    height: 20px;
+    filter: invert(92%) sepia(1%) saturate(0%) hue-rotate(171deg) brightness(91%) contrast(96%);
+    margin-left: 20px;
+}
+
+.notClicked{
+    width: 20px;
+    height: 20px;
+    filter: invert(17%) sepia(1%) saturate(3528%) hue-rotate(71deg) brightness(93%) contrast(82%);
+    margin-left: 20px;
+}

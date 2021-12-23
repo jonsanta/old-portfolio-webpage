@@ -7,12 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class RightNavBarItemComponent implements OnInit {
 
-  @Input() computer: boolean;
-  @Input() stickyMode: boolean;
-
   constructor() { 
-    this.computer = false;
-    this.stickyMode = false;
   }
 
   ngOnInit(): void {

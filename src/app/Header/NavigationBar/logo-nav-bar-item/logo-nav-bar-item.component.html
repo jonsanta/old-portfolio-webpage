@@ -1,5 +1,6 @@
-<div class="logo">
-    <img src="assets/images/logo.png">
+<div class="logo" (click)="onClick()">
+    <img [ngClass]="{'mobile': !computer}" src="assets/images/logo.png">
+    <img [ngClass]="{'clicked': buttonClicked, 'notClicked': !buttonClicked}" *ngIf="!computer" src="assets/images/menu.png">
 </div>
 
 
