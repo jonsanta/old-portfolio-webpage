@@ -6,7 +6,6 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Jon';
 
   fixedWidth : number;
 
@@ -15,11 +14,12 @@ export class AppComponent {
     this.fixedWidth = this.resize();
   }
 
-  @HostListener('window:resize', ['$event']) //r
+  @HostListener('window:resize', ['$event'])//On Resize event
   onResize(): void{
     this.fixedWidth = this.resize();
   }
 
+  //Fixes the page width taking care of the vertical page scrollbar
   resize() : number{
     return window.innerWidth -(window.innerWidth - document.body.clientWidth);
   }

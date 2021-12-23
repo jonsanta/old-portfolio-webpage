@@ -6,7 +6,7 @@
     [buttonClicked]="dropdownshown"></app-logo-nav-bar-item>
     
     <div *ngIf="computer" class="left">
-      <a (click)="scrollToAnchor('#aboutme')"><app-left-nav-bar-item content="Información"></app-left-nav-bar-item></a>
+      <a (click)="scrollToAnchor('#aboutme')"><app-left-nav-bar-item content="Inicio"></app-left-nav-bar-item></a>
       <a (click)="scrollToAnchor('#skillsets')"><app-left-nav-bar-item content="Habilidades"></app-left-nav-bar-item></a>
       <a (click)="scrollToAnchor('#projects')"><app-left-nav-bar-item content="Proyectos"></app-left-nav-bar-item></a>
       <a (click)="scrollToAnchor('#contact')"><app-left-nav-bar-item content="Contacto"></app-left-nav-bar-item></a>
@@ -15,7 +15,7 @@
     <app-right-nav-bar-item class="right"></app-right-nav-bar-item>
 
     <div [@dropDown]="desplegableState" class="dropdownmenu">
-      <a (click)="scrollToAnchor('#aboutme')"><app-dropdownitem (click)="dropdown()" content="Información"></app-dropdownitem></a>
+      <a (click)="scrollToAnchor('#aboutme')"><app-dropdownitem (click)="dropdown()" content="Inicio"></app-dropdownitem></a>
       <a (click)="scrollToAnchor('#skillsets')"><app-dropdownitem (click)="dropdown()" content="Habilidades"></app-dropdownitem></a>
       <a (click)="scrollToAnchor('#projects')"><app-dropdownitem (click)="dropdown()" content="Proyectos"></app-dropdownitem></a>
       <a (click)="scrollToAnchor('#contact')"><app-dropdownitem (click)="dropdown()" content="Contacto"></app-dropdownitem></a>
