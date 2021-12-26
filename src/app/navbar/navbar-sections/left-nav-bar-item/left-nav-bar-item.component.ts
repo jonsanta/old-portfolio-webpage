@@ -2,7 +2,7 @@ import { animate, keyframes, state, style, transition, trigger } from '@angular/
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-left-nav-bar-item',
+  selector: 'left-nav-item',
   templateUrl: './left-nav-bar-item.component.html',
   styleUrls: ['./left-nav-bar-item.component.css'],
   animations:[

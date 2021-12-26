@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-right-nav-bar-item',
+  selector: 'right-nav',
   templateUrl: './right-nav-bar-item.component.html',
   styleUrls: ['./right-nav-bar-item.component.css']
 })

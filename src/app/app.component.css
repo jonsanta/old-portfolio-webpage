@@ -2,27 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 #sections{
-    display: flex;
-    flex-direction: column;
     height: auto;
     font-size: 30px;
-    text-align: center;
     color: #353839;
     font-family: Montserrat , sans-serif;
     background-color: #ededed;
+    text-align: center;
     z-index: -1;
 }
 
-#aboutme{
+.container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: #ededed;
+    width: auto;
+    max-width: 93vw;
+    margin: 0 auto;
 }
 
-#aboutme h1{
+h1{
     font-size: 30px;
     font-weight: normal;
     padding-top: 30px;
@@ -30,82 +27,38 @@
     text-align: center;
 }
 
-.abcontent{
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    max-width: 93vw;
-    padding-bottom: 25px;
-    text-align: justify;
-    margin: 0 auto;
-}
-
-.abcontent h2{
+h2{
     font-size: 22px;
     padding: 20px 0 0 0;
     margin: 0;
+    text-align: justify;
 }
 
-.abcontent h3{
+
+#aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+#aboutme h3{
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
     font-size: 20px;
     padding: 5px 0 7px 0;
     margin: 0;
+    text-align: justify;
 }
 
-.abcontent p{
+#aboutme p{
     font-family: 'Roboto Slab', serif;
     font-size: 15.5px;
     padding: 5px 0 0 0;
     margin: 0;
     color: black;
-}
-
-#skillsets{
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    background-color: #ededed;
-    margin: 0 auto;
-}
-
-#skillsets h2{
-    font-size: 22px;
-    padding-left: 15px;
     text-align: justify;
-    margin: 0;
-}
-
-.scontent{
-    width: auto;
-    height: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: center;
-    gap: 20px 60px;
-    padding: 20px 15px 40px 15px;
-}
-
-@media screen and (max-width: 845px){
-    .scontent app-skill{
-        width: 55px;
-        height: 55px;
-    }
-}
-
-@media screen and (min-width: 845px){
-    .scontent app-skill{
-        width: 60px;
-        height: 60px;
-    }
-}
-
-.scontent app-skill{
-    width: 70px;
-    height: 70px;
 }
 
 #projects{
@@ -113,47 +66,48 @@
     flex-direction: column;
     border-top: 1px solid#353839;
     border-bottom: 1px solid#353839;
-    width: 100%;
+    width: auto;
     height: auto;
     color: whitesmoke;
     background-color: #4682b4;
     align-items: center;
 }
 
-#projects p{
-    padding: 30px 0 20px 0;
-    margin: 0;
-}
-
 .pcontent{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: auto;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1240;
     justify-content: center;
     max-width: 93vw;
     height: 90%;
     gap: 20px 20px;
-    margin: 0 auto 30px;
+    margin: 20px auto 30px;
+}
+
+.pcontent project{
+    width: 400px;
+    height: 210px;
+}
+
+@media screen and (max-width: 1250px){
+    .pcontent{
+        grid-template-columns: 1fr 1fr;
+    }
+    .pcontent project{
+        width: 48vw;
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 845px){
-    .pcontent app-project{
-        width: 250px;
-        height: 19%;
+    .pcontent{
+        grid-template-columns: 1fr;
     }
-}
-
-@media screen and (min-width: 845px){
-    .pcontent app-project{
-        width: 250px;
-        height: 19%;
+    .pcontent project{
+        width: 93vw;
+        height: 300px;
     }
-}
-
-.pcontent app-project{
-    width: 400px;
-    height: 180px;
 }
 
 app-contact{
@@ -161,7 +115,6 @@ app-contact{
     flex-direction: column;
     width: 100%;
     height: auto;
-    background: #ededed;
 }
 
 #footer{

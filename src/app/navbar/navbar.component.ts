@@ -1,10 +1,10 @@
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit, HostListener} from '@angular/core';
+import { Component, OnInit, HostListener, Input} from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+  selector: 'navbar',
+  templateUrl: './Navbar.component.html',
+  styleUrls: ['./Navbar.component.css'],
   animations:[
     trigger('dropDown', [
       state('notvisible', style({
@@ -49,14 +49,14 @@ import { Component, OnInit, HostListener} from '@angular/core';
     ])
   ]
 })
-export class HeaderComponent implements OnInit{
+export class Navbar implements OnInit{
 
   desplegableState : string;
   desplegableButtonColor: string;
 
   banner : boolean;
 
-  computer : boolean;
+  @Input() computer : boolean;
 
   dropdownshown : boolean;
 
@@ -101,7 +101,7 @@ export class HeaderComponent implements OnInit{
     let rect = document.querySelector(id)!.getBoundingClientRect().top;
     let scrollTop = document.documentElement.scrollTop-50;
 
-    window.scrollTo({top: rect+scrollTop});
+    window.scrollTo({top: rect+scrollTop, behavior: 'smooth'});
 
     /*
     //Jquery that will scroll to given ID tag in HTML -- JQUERY NOT NEEDED ANYMORE
@@ -123,6 +123,17 @@ export class HeaderComponent implements OnInit{
   }
 
   @HostListener('window:resize', ['$event'])
+  whenResized() : void
+  {
+    if(this.computer)
+    {
+      this.dropdownshown =false;
+      this.desplegableState = "notvisible";
+      this.desplegableButtonColor = "normal";
+    }
+  }
+
+
   detectMobile() : void{ //enables mobile mode for low width devices
     if(window.innerWidth < 900) this.computer = false;
     else{
@@ -138,6 +149,5 @@ export class HeaderComponent implements OnInit{
       return check;
       */
   }
-
 }
 

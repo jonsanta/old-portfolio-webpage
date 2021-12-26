@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
-  selector: 'app-logo-nav-bar-item',
+  selector: 'logo-nav',
   templateUrl: './logo-nav-bar-item.component.html',
   styleUrls: ['./logo-nav-bar-item.component.css']
 })

@@ -1,9 +1,10 @@
 <div [ngStyle]="{'width' : fixedWidth+'px'}">
-  <app-header></app-header>
+  <home [computer]="computer"></home>
+  <navbar [computer]="computer"></navbar>
   <div id="sections">
     <div id="aboutme">
       <h1>SOBRE MÍ</h1>
-      <div class="abcontent">
+      <div class="container">
         <h2>Soy Jon,</h2>
         <h3>Web Developer / Game Developer</h3>
         <p>Tengo experiencia en Front End con Angular. Responsive Web Design. Manejo JS y TS. 
@@ -11,38 +12,29 @@
         <p>Me defino como resolutivo y autodidacta. Siempre busco aprender nuevas tecnologías y mejorar las ya conocidas.
           Muchas ganas de trabajar en equipo y demostrar mi valia.</p>
         <p>Actualmente estoy terminando el grado superior de DAM para obtener el titulo.</p>
+        <h2>Habilidades</h2>
       </div>
-    </div>
-    <div id="skillsets">
-      <h2>Habilidades</h2>
-      <div class="scontent">
-        <app-skill url="assets/images/skill/html5.png"></app-skill>
-        <app-skill url="assets/images/skill/css3.png"></app-skill>
-        <app-skill url="assets/images/skill/mongodb.png"></app-skill>
-        <app-skill url="assets/images/skill/angular.png"></app-skill>
-        <app-skill url="assets/images/skill/js.png"></app-skill>
-        <app-skill url="assets/images/skill/typescript.png"></app-skill>
-        <app-skill url="assets/images/skill/mysql.png"></app-skill>
-        <app-skill url="assets/images/skill/java.png"></app-skill>
-        <app-skill url="assets/images/skill/unity.png"></app-skill>
-        <app-skill url="assets/images/skill/csharp.png"></app-skill>
-      </div>
+      <skills-container class="container" style="align-items: center;">
+      </skills-container >
     </div>
     <div id="projects">
-      <p lang="es">PROYECTOS</p>
-      <div class="pcontent">
-        <app-project></app-project>
-        <app-project></app-project>
-        <app-project></app-project>
-        <app-project></app-project>
-        <app-project></app-project>
-        <app-project></app-project>
-        <app-project></app-project>
-        <app-project></app-project>
-        <app-project></app-project>
+      <h1>PROYECTOS</h1>
+      <div class="container">
+        <h2>Habilidades</h2>
+        <div class="pcontent">
+          <project url="./assets/images/project/project1.jpg"></project>
+          <project></project>
+          <project></project>
+          <project></project>
+          <project></project>
+          <project></project>
+          <project></project>
+          <project></project>
+          <project></project>
+        </div>
       </div>
     </div>
-    <app-contact id="contact"></app-contact>
+    <contact id="contact"></contact>
   </div>
   <div id="footer">
     <p>Developed and designed by Jon Santamaria Zamora.</p>
