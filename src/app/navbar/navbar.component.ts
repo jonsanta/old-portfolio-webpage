@@ -50,7 +50,6 @@ import { Component, OnInit, HostListener, Input} from '@angular/core';
   ]
 })
 export class Navbar implements OnInit{
-
   desplegableState : string;
   desplegableButtonColor: string;
 

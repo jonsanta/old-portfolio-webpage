@@ -1,17 +1,15 @@
-<div id="home" [ngStyle]="{'height' : height+'px'}" class="home">
-    <div class="home_background"></div>
-    <div [ngClass]="{'home_content' : true, 'home_content_mobile' : !computer}">
-        <div [ngClass]="{'logo' : computer, 'logo_mobile' : !computer}">
-            <div [ngClass]="{'button' : true, 'button_mobile' : !computer}">
-                <a (click)="scrollToAnchor()"><img src="assets/images/down.png"></a>
-            </div>
-            <img src="assets/images/logo.png">
+<div class="home_background"></div>
+<div [ngClass]="{'home_content' : true, 'home_content_mobile' : !computer}">
+    <div [ngClass]="{'logo' : computer, 'logo_mobile' : !computer}">
+        <div [ngClass]="{'button' : true, 'button_mobile' : !computer}">
+            <a (click)="scrollToAnchor()"><img src="assets/images/down.png"></a>
         </div>
-        <div [ngClass]="{'text' : computer, 'text_mobile' : !computer}">
-            <span><p>Jon Santamaria Zamora</p></span>
-            <span>Front End Developer</span>
-            <p>&</p>
-            <span>Game Developer</span>
-        </div>
+        <img src="assets/images/logo.png">
+    </div>
+    <div [ngClass]="{'text' : computer, 'text_mobile' : !computer}">
+        <span><p>Jon Santamaria Zamora</p></span>
+        <span>Front End Developer</span>
+        <p>&</p>
+        <span>Game Developer</span>
     </div>
 </div>
