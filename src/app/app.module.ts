@@ -5,7 +5,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Navbar } from './navbar/navbar.component';
-import { HomeComponent } from './navbar/home/home.component';
+import { HomeComponent } from './home/home.component';
 import { LeftNavBarItemComponent } from './navbar/navbar-sections/left-nav-bar-item/left-nav-bar-item.component';
 import { LogoNavBarItemComponent } from './navbar/navbar-sections/logo-nav-bar-item/logo-nav-bar-item.component';
 import { RightNavBarItemComponent } from './navbar/navbar-sections/right-nav-bar-item/right-nav-bar-item.component';
