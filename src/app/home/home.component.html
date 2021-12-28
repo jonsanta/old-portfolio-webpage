@@ -1,12 +1,10 @@
 <div class="home_background"></div>
-<div [ngClass]="{'home_content' : true, 'home_content_mobile' : !computer}">
-    <div [ngClass]="{'logo' : computer, 'logo_mobile' : !computer}">
-        <div [ngClass]="{'button' : true, 'button_mobile' : !computer}">
-            <a (click)="scrollToAnchor()"><img src="assets/images/down.png"></a>
-        </div>
-        <img src="assets/images/logo.png">
+<div class="home_content">
+    <div class="top">
+        <img class="button" (click)="scrollToAnchor()" src="assets/images/down.png">
+        <img class="logo" src="assets/images/logo.png">
     </div>
-    <div [ngClass]="{'text' : computer, 'text_mobile' : !computer}">
+    <div class="bottom">
         <span><p>Jon Santamaria Zamora</p></span>
         <span>Front End Developer</span>
         <p>&</p>

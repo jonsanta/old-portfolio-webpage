@@ -1,11 +1,11 @@
-import { Component} from '@angular/core';
+import { Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
   computer : boolean;
 
@@ -14,6 +14,11 @@ export class AppComponent {
     this.computer = true;
   }
 
+  ngOnInit(): void {
+    this.detectMobile();
+  }
+
+  @HostListener('window:resize', ['$event'])
   detectMobile() : void{ //enables mobile mode for low width devices
     if(window.innerWidth < 900) this.computer = false;
     else{

@@ -40,9 +40,10 @@ h2{
     align-items: center;
     width: 100%;
     height: auto;
+    padding-top: 20px;
 }
 
-#aboutme h3{
+h3{
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
     font-size: 20px;

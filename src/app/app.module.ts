@@ -9,7 +9,7 @@ import { LeftNavBarItemComponent } from './nav-bar/navbar-sections/left-nav-bar-
 import { LogoNavBarItemComponent } from './nav-bar/navbar-sections/logo-nav-bar-item/logo-nav-bar-item.component';
 import { RightNavBarItemComponent } from './nav-bar/navbar-sections/right-nav-bar-item/right-nav-bar-item.component';
 import { DropdownitemComponent } from './nav-bar/dropdownitem/dropdownitem.component';
-import { SkillComponent } from './skill/skill.component';
+import { SkillComponent } from './skills-container/skill/skill.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectComponent } from './project/project.component';
 import { SkillsContainerComponent } from './skills-container/skills-container.component';
