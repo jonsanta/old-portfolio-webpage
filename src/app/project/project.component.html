@@ -1,3 +1,3 @@
 <div class="container">
-    <img *ngIf="url != ''" [src]="url">
+    <img [ngStyle]="{'width': width+'%', 'border-radius': border}" *ngIf="url != ''" [src]="url">
 </div>

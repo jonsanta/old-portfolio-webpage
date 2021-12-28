@@ -10,4 +10,10 @@ p{
     padding-left: 10px;
     padding-right: 10px;
     color:#353839;
+    cursor: pointer;
+}
+
+P:hover{
+    color: #C0C0C0;
+    transition: color 200ms ease-in-out;
 }

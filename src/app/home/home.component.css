@@ -52,6 +52,10 @@
     margin: 3vh 3vh 0 auto;
 }
 
+.button:hover{
+    filter: invert(68%) sepia(1%) saturate(0%) hue-rotate(312deg) brightness(99%) contrast(95%);
+}
+
 .logo{
     height: 225px;
     width: 225px;

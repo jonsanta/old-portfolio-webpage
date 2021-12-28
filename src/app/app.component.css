@@ -33,6 +33,14 @@ h2{
     text-align: justify;
 }
 
+h3{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 0 7px 0;
+    margin: 0;
+    text-align: justify;
+}
 
 #aboutme{
     display: flex;
@@ -41,15 +49,6 @@ h2{
     width: 100%;
     height: auto;
     padding-top: 20px;
-}
-
-h3{
-    font-family: 'Roboto Slab', serif;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 5px 0 7px 0;
-    margin: 0;
-    text-align: justify;
 }
 
 #aboutme p{
@@ -70,10 +69,15 @@ h3{
     height: auto;
     color: whitesmoke;
     background-color: #4682b4;
-    align-items: center;
 }
 
-.pcontent{
+#projects h3{
+    padding: 20px 6px 4px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.projects{
     display: grid;
     height: auto;
     grid-template-columns: 1fr 1fr 1fr;
@@ -82,29 +86,29 @@ h3{
     max-width: 93vw;
     height: 90%;
     gap: 20px 20px;
-    margin: 20px auto 30px;
+    margin: 10px auto 30px;
 }
 
-.pcontent project{
+.projects project{
     width: 400px;
     height: 210px;
 }
 
 @media screen and (max-width: 1250px){
-    .pcontent{
+    .projects{
         grid-template-columns: 1fr 1fr;
     }
-    .pcontent project{
+    .projects project{
         width: 48vw;
         height: 300px;
     }
 }
 
 @media screen and (max-width: 845px){
-    .pcontent{
+    .projects{
         grid-template-columns: 1fr;
     }
-    .pcontent project{
+    .projects project{
         width: 93vw;
         height: 300px;
     }

@@ -11,3 +11,9 @@ p{
     text-decoration: none;
     cursor: pointer;
 }
+
+p:active{
+    background-color: #d3d3d3;
+    transition: background-color 100ms ease-in-out;
+}
+

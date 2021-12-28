@@ -14,7 +14,7 @@ import { Component, OnInit, Input, HostListener } from '@angular/core';
         'transition': 'height 200ms ease-in-out, color 100ms ease'
       })),
       state('openned', style({
-        'height': '220px',
+        'height': '210px',
         'color': 'black',
         'pointer-events': 'auto',
         'transition': 'height 200ms ease-in-out, color 200ms cubic-bezier(0,0,0,-1)'
