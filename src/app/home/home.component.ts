@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, HostListener} from '@angular/core';
+import { Component, OnInit, HostListener} from '@angular/core';
 
 @Component({
   selector: 'home',
@@ -10,11 +10,8 @@ import { Component, OnInit, Input, HostListener} from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  @Input() computer : boolean;
-
   height : number;
   constructor() {
-    this.computer = true;
     this.height = this.resizeHome();
   }
 

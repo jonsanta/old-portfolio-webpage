@@ -24,12 +24,12 @@ img{
     cursor: pointer;
 }
 
-.button:hover .notClicked{
+.button:hover .menu_button{
     transition: filter 300ms ease-in-out;
     filter: invert(92%) sepia(1%) saturate(0%) hue-rotate(171deg) brightness(91%) contrast(96%);
 }
 
-.notClicked{
+.menu_button{
     width: 20px;
     height: 20px;
     filter: invert(17%) sepia(1%) saturate(3528%) hue-rotate(71deg) brightness(93%) contrast(82%);
