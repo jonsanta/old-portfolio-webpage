@@ -1,23 +1,80 @@
-import { Component} from '@angular/core';
+import { trigger, state, style} from '@angular/animations';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'nav-bar',
+  templateUrl: './nav-bar.component.html',
+  styleUrls: ['./nav-bar.component.css'],
+  animations:[
+    trigger('menu', [
+      state('closed', style({
+        'height': '0px',
+        'color': 'transparent',
+        'pointer-events': 'none',
+        'transition': 'height 200ms ease-in-out, color 100ms ease'
+      })),
+      state('openned', style({
+        'height': '220px',
+        'color': 'black',
+        'pointer-events': 'auto',
+        'transition': 'height 200ms ease-in-out, color 200ms cubic-bezier(0,0,0,-1)'
+      }))
+    ]),
+  ]
 })
-export class AppComponent {
+export class NavBarComponent implements OnInit {
+  sticky : boolean;
+  isOpen : boolean;
 
-  computer : boolean;
+  @Input() computer : boolean;
 
-  constructor()
-  {
+  constructor() { 
+    this.sticky = false;
     this.computer = true;
+    this.isOpen = false;
   }
 
+  ngOnInit(): void {
+    this.detectMobile();
+  }
+
+  onClick() : void{
+    if(!this.computer) this.isOpen = !this.isOpen;
+  }
+
+  //Instant scroll to given element by ID
+  scrollToAnchor(id : string){
+    let rect = document.querySelector(id)!.getBoundingClientRect().top;
+    let scrollTop = document.documentElement.scrollTop-50;
+
+    window.scrollTo({top: rect+scrollTop, behavior: 'smooth'});
+    this.isOpen = false;
+
+    /*
+    //Jquery that will scroll to given ID tag in HTML -- JQUERY NOT NEEDED ANYMORE
+    $('html, body').animate({
+      scrollTop: $(id).offset()!.top -50
+      }, 10);
+    */
+  }
+
+  @HostListener('window:scroll', ['$event']) // window scroll event
+  onScroll() : void {
+    let height; 
+    
+    if(document.documentElement.clientHeight > 700) height = document.documentElement.clientHeight;
+    else height = 700;
+
+    if(document.documentElement.scrollTop >= height) this.sticky = true;
+    else this.sticky = false;
+  }
+
+  @HostListener('window:resize', ['$event'])
   detectMobile() : void{ //enables mobile mode for low width devices
     if(window.innerWidth < 900) this.computer = false;
     else{
       this.computer = true
+      this.isOpen = false;
     }
 
     /* DETECTS IF MOBILE DEVICE BROWSER

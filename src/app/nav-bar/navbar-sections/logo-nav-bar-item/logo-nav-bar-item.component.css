@@ -20,11 +20,13 @@ img{
     margin-left: 10px;
 }
 
-.clicked{
-    width: 20px;
-    height: 20px;
+.button {
+    cursor: pointer;
+}
+
+.button:hover .notClicked{
+    transition: filter 300ms ease-in-out;
     filter: invert(92%) sepia(1%) saturate(0%) hue-rotate(171deg) brightness(91%) contrast(96%);
-    margin-left: 20px;
 }
 
 .notClicked{

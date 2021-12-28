@@ -1,32 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-.navbar{
+.sticky{
     position: -webkit-sticky;
     position: sticky;
     top: -1px;
-    opacity: 1!important;
-    z-index: 2;
 }
 
-.top{
+.nav{
     width: 100%;
     height: 50px;
-    display: flex;
-    flex-direction: row;
     font-family: Montserrat , sans-serif;
     font-size: 22px;
     color: #353839;
     background-color: #ffffff!important;
 }
 
-#wrapper{
+#container{
+    position: relative;
     top: 0em;
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
     box-shadow: 1px 1px 10px 1.8px rgba(0, 0, 0, 0.4);
-    z-index: 2;
 }
 
 .mobile{
@@ -47,27 +41,14 @@
     padding-left: 5px;
 }
 
-.right{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    max-width: 20%;
-    justify-items: right;
-    justify-content: right;
-    align-items: flex-end;
-    margin: 0 0 0 auto;
-}
-
-.dropdownmenu{
+.menu{
     position: absolute;
-    display: flex;
-    flex-direction: column;
+    left: 0;    
+    top: 100%;
     width: 100%;
-    background-color: #fefefa;
-    color:#353839;
-    font-size: 20px;
-    transform: translateY(-10em);
-    z-index: 0;
+    height: auto;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 10px 1.8px rgba(0, 0, 0, 0.4);
 }
 
 a{
