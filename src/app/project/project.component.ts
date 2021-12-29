@@ -25,19 +25,12 @@ import { Component, OnInit, Input} from '@angular/core';
 export class ProjectComponent implements OnInit {
 
   @Input() url : string;
-  @Input("w") width : string;
-  border : string;
 
   constructor() { 
     this.url = "";
-    this.width = "100";
-    if(this.width == "100") this.border = "25px";
-    else this.border = "0px";
   }
 
   ngOnInit(): void {
-    if(this.width == "100") this.border = "25px";
-    else this.border = "0px";
   }
 
 }
