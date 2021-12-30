@@ -1,8 +1,8 @@
-<div class="container">
-    <div [ngStyle]="{'background-image': url}"  class="background"></div>
+<div (mouseover)="show()" (mouseout)="close()" class="container">
+    <div [ngStyle]="{'background-image': url, 'transform': trfS}"  class="background"></div>
     <div class="overlay">
-        <span class="title"></span>
-        <span class="description"></span>
+        <span class="title">Titulo</span>
+        <span class="description">Descripción</span>
         <div class="buttons">
             <span class="button">Preview</span>
             <span class="button">Repositorio</span>

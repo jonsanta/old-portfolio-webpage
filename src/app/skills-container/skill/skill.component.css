@@ -6,7 +6,7 @@ img{
 }
 
 img:hover{
-    filter: brightness(80%);
+    filter: brightness(50%);
     transition: filter 200ms ease;
 }
 
