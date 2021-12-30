@@ -8,27 +8,30 @@ import { Component, OnInit, Input} from '@angular/core';
 export class ProjectComponent implements OnInit {
 
   @Input() url : string;
-  @Input("ts") initialTransformScale : string;
-  @Input("ats") animationTransformScale : string;
-  trfS : string;
+  @Input("bgmode") backgroundMode : string;
+  @Input("title") title : string;
+  @Input("desc") description : string;
+  @Input("repo") repository : string;
+  @Input("pre") preview : string;
 
-  constructor() { 
+  property : string;
+
+  constructor() {
     this.url = "";
-    this.initialTransformScale = "scale(1)";
-    this.trfS = this.initialTransformScale;
-    this.animationTransformScale = "scale(1.5)";
+    this.property = "";
+    this.backgroundMode = "cover";
+    this.title = "Default-Title";
+    this.description = "Default-Description";
+    this.repository ="";
+    this.preview ="";
   }
 
   ngOnInit(): void {
-    this.trfS = this.initialTransformScale;
+      this.property = "url("+this.url+")";
   }
 
-  show(): void{
-    this.trfS = this.animationTransformScale;
+  onClick(option : string): void{
+    if(option == "repo") window.open("https://github.com/jonsanta/"+this.repository, "_blank");
+    else if(option == "pre") window.open(this.preview, "_blank");
   }
-
-  close(): void{
-    this.trfS = this.initialTransformScale;
-  }
-
 }

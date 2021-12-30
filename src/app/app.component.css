@@ -63,12 +63,12 @@ h3{
 #projects{
     display: flex;
     flex-direction: column;
-    border-top: 1px solid#353839;
-    border-bottom: 1px solid#353839;
+    border-top: 1px solid#080808;
+    border-bottom: 1px solid#080808;
     width: auto;
     height: auto;
     color: whitesmoke;
-    background-color: #4682b4;
+    background-color: #a2add0;
 }
 
 #projects h3{

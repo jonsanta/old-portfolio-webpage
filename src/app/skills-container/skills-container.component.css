@@ -4,13 +4,12 @@
     flex-wrap: wrap;
     justify-content: center;
     height: auto;
-    gap: 20px 60px;
-    padding: 20px 0 40px 0;
+    gap: 40px 60px;
+    padding: 20px 0 10px 0;
 }
 
 #skillset skill{
     width: 70px;
-    height: 70px;
 }
 #skillset{
     width: 1250px;
@@ -19,7 +18,7 @@
 @media (max-width: 1328px){
     #skillset skill{
         width: 65px;
-        height: 65px;
+        height: 75px;
     }
     #skillset{
         width: 93vw;
@@ -29,7 +28,7 @@
 @media (max-width: 700px){
     #skillset skill{
         width: 60px;
-        height: 60px;
+        height: 70px;
     }
     #skillset{
         width: 93vw;

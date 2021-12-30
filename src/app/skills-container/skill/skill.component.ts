@@ -7,13 +7,16 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SkillComponent implements OnInit {
 
-  @Input() url : string
+  @Input() name : string
+  url : string;
 
   constructor() {
+    this.name = "";
     this.url = "";
    }
 
   ngOnInit(): void {
+    this.url ="assets/images/skill/"+this.name.toLowerCase()+".png";
   }
 
 }
