@@ -14,6 +14,8 @@ export class AppComponent implements OnInit {
     this.computer = true;
   }
 
+  
+
   ngOnInit(): void {
     this.detectMobile();
   }

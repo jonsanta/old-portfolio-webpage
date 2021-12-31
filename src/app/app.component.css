@@ -72,8 +72,9 @@ h3{
 }
 
 #projects h3{
+    font-family: 'Roboto Slab', serif;
     padding: 20px 6px 4px;
-    font-size: 18px;
+    font-size: 19px;
     text-align: justify;
 }
 
@@ -99,8 +100,8 @@ h3{
         grid-template-columns: 1fr 1fr;
     }
     .projects project{
-        width: 48vw;
-        height: 300px;
+        width: 45vw;
+        height: 280px;
     }
 }
 
