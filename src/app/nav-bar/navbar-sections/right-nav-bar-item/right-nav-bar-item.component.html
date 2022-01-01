@@ -1,4 +1,6 @@
 <div class="right">
-    <img src="assets/images/globe.png" >
-    <p>ES</p>
+    <img src="assets/images/globe.png">
+    <span (click)="changeLang('es')" [ngClass]="{'hovered': !hover}">ES</span>
+    <a id="Border"></a>
+    <span (click)="changeLang('en')" [ngClass]="{'hovered': hover}">EN</span>
 </div>

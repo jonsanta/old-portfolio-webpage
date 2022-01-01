@@ -1,5 +1,6 @@
 import { trigger, state, style} from '@angular/animations';
-import { Component, OnInit, Input, HostListener } from '@angular/core';
+import { Component, OnInit, Input, HostListener, Output, EventEmitter} from '@angular/core';
+import { Lang } from '../lang';
 
 @Component({
   selector: 'nav-bar',
@@ -26,12 +27,18 @@ export class NavBarComponent implements OnInit {
   sticky : boolean;
   isOpen : boolean;
 
+  navbarButtons : string[] = [];
+
   @Input() computer : boolean;
+
+  @Output() languageChanged : EventEmitter<boolean>;
 
   constructor() { 
     this.sticky = false;
     this.computer = true;
     this.isOpen = false;
+    this.navbarButtons = Lang.getNavbarButtons();
+    this.languageChanged = new EventEmitter();
   }
 
   ngOnInit(): void {
@@ -55,6 +62,11 @@ export class NavBarComponent implements OnInit {
       scrollTop: $(id).offset()!.top -50
       }, 10);
     */
+  }
+
+  changeLanguage() : void {
+    this.navbarButtons = Lang.getNavbarButtons();
+    this.languageChanged.emit();
   }
 
   @HostListener('window:scroll', ['$event']) // window scroll event

@@ -3,19 +3,19 @@
         <logo-nav (click)="onClick()" [computer]="computer" class="logo" ></logo-nav>
         
         <div *ngIf="computer" class="left">
-            <a (click)="scrollToAnchor('#home')"><left-nav-item content="Inicio"></left-nav-item></a>
-            <a (click)="scrollToAnchor('#aboutme')"><left-nav-item content="Sobre mí"></left-nav-item></a>
-            <a (click)="scrollToAnchor('#projects')"><left-nav-item content="Proyectos"></left-nav-item></a>
-            <a (click)="scrollToAnchor('#contact')"><left-nav-item content="Contacto"></left-nav-item></a>
+            <a (click)="scrollToAnchor('#home')"><left-nav-item content="{{navbarButtons[0]}}"></left-nav-item></a>
+            <a (click)="scrollToAnchor('#aboutme')"><left-nav-item content="{{navbarButtons[1]}}"></left-nav-item></a>
+            <a (click)="scrollToAnchor('#projects')"><left-nav-item content="{{navbarButtons[2]}}"></left-nav-item></a>
+            <a (click)="scrollToAnchor('#contact')"><left-nav-item content="{{navbarButtons[3]}}"></left-nav-item></a>
         </div>
 
-        <right-nav class="right"></right-nav>
+        <right-nav (languageChanged)="changeLanguage()" class="right"></right-nav>
 
         <div [@menu]="isOpen? 'openned' : 'closed'" class="menu">
-            <a (click)="scrollToAnchor('#home')"><dropdown-item content="Inicio"></dropdown-item></a>
-            <a (click)="scrollToAnchor('#aboutme')"><dropdown-item content="Sobre mí"></dropdown-item></a>
-            <a (click)="scrollToAnchor('#projects')"><dropdown-item content="Proyectos"></dropdown-item></a>
-            <a (click)="scrollToAnchor('#contact')"><dropdown-item content="Contacto"></dropdown-item></a>
+            <a (click)="scrollToAnchor('#home')"><dropdown-item content="{{navbarButtons[0]}}"></dropdown-item></a>
+            <a (click)="scrollToAnchor('#aboutme')"><dropdown-item content="{{navbarButtons[1]}}"></dropdown-item></a>
+            <a (click)="scrollToAnchor('#projects')"><dropdown-item content="{{navbarButtons[2]}}"></dropdown-item></a>
+            <a (click)="scrollToAnchor('#contact')"><dropdown-item content="{{navbarButtons[3]}}"></dropdown-item></a>
         </div>
     </div>
 </nav>

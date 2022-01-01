@@ -14,6 +14,8 @@ export class ProjectComponent implements OnInit {
   @Input("repo") repository : string;
   @Input("pre") preview : string;
 
+  @Input() buttonText : string[] = [];
+
   property : string;
 
   constructor() {
@@ -24,6 +26,7 @@ export class ProjectComponent implements OnInit {
     this.description = "Default-Description";
     this.repository ="";
     this.preview ="";
+    this.buttonText = ["Preview", "Repository"];
   }
 
   ngOnInit(): void {

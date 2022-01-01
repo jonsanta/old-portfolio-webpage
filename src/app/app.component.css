@@ -67,15 +67,15 @@ h3{
     border-bottom: 1px solid#080808;
     width: auto;
     height: auto;
-    color: whitesmoke;
+    color: #f8f8ff;
     background-color: #a2add0;
 }
 
 #projects h3{
     font-family: 'Roboto Slab', serif;
-    padding: 20px 6px 4px;
-    font-size: 19px;
-    text-align: justify;
+    padding: 7px 6px 10px;
+    font-size: 17.5px;
+    text-align: center;
 }
 
 .projects{
@@ -140,3 +140,4 @@ app-contact{
 #footer p{
     padding: 10px 0 10px 0;
 }
+

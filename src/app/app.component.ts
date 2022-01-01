@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit} from '@angular/core';
+import { Lang } from './lang';
 
 @Component({
   selector: 'app-root',
@@ -8,16 +9,32 @@ import { Component, HostListener, OnInit} from '@angular/core';
 export class AppComponent implements OnInit {
 
   computer : boolean;
+  aboutme : string[] = [];
+  projectText : string[] = []
+  contact : string = "CONTACT";
+  buttonText : string[] = [];
+  footerText : string = "Developed and designed by Jon Santamaria Zamora.";
+
 
   constructor()
   {
     this.computer = true;
+    if(navigator.language == "es") document.documentElement.lang = "es";
+    else if(navigator.language != "") document.documentElement.lang = "en";
+    else document.documentElement.lang = "en";
+    this.changeLanguage();
   }
-
-  
 
   ngOnInit(): void {
     this.detectMobile();
+  }
+
+  changeLanguage() : void {
+    this.aboutme = Lang.getAboutMe();
+    this.projectText = Lang.getprojectText();
+    this.contact = Lang.getContact();
+    this.buttonText = Lang.getProjectButtons();
+    this.footerText = Lang.getFooter();
   }
 
   @HostListener('window:resize', ['$event'])
