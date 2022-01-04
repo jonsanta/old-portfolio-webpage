@@ -6,14 +6,13 @@ import { Component, OnInit, Output, EventEmitter} from '@angular/core';
   styleUrls: ['./right-nav-bar-item.component.css']
 })
 export class RightNavBarItemComponent implements OnInit {
-  hover : boolean;
+  hover : boolean = false;
   
   @Output() languageChanged : EventEmitter<boolean>;
 
-  constructor() { 
+  constructor() {
     this.setLang();
     this.languageChanged = new EventEmitter();
-    this.hover = false;
   }
 
   ngOnInit(): void {

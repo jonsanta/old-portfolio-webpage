@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     this.computer = true;
     if(navigator.language == "es") document.documentElement.lang = "es";
     else if(navigator.language != "") document.documentElement.lang = "en";
-    else document.documentElement.lang = "en";
+    else document.documentElement.lang = "es";
     this.changeLanguage();
   }
 

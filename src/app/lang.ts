@@ -26,7 +26,7 @@ export abstract class Lang {
         if(document.documentElement.lang == "es")
         {
             aboutme[0] = "SOBRE MÍ";
-            aboutme[1] = "Soy Jon,"
+            aboutme[1] = "Soy Jon."
             aboutme[2] = "Web Developer / Game Developer"
             aboutme[3] = "Tengo experiencia en Front End con Angular. Responsive Web Design. Manejo JS y TS. 5 años de experiencia con Unity3D y lenguajes como C# y Java."
             aboutme[4] = "Me defino como resolutivo y autodidacta. Siempre busco aprender nuevas tecnologías y mejorar las ya conocidas. Muchas ganas de trabajar en equipo y demostrar mi valia."
@@ -38,9 +38,9 @@ export abstract class Lang {
             aboutme[0] = "ABOUT ME";
             aboutme[1] = "I'm Jon,"
             aboutme[2] = "Web Developer / Game Developer"
-            aboutme[3] = "Tengo experiencia en Front End con Angular. Responsive Web Design. Manejo JS y TS. 5 años de experiencia con Unity3D y lenguajes como C# y Java."
-            aboutme[4] = "Me defino como resolutivo y autodidacta. Siempre busco aprender nuevas tecnologías y mejorar las ya conocidas. Muchas ganas de trabajar en equipo y demostrar mi valia."
-            aboutme[5] = "Actualmente estoy terminando el grado superior de DAM para obtener el titulo."
+            aboutme[3] = "I'm experienced in Front End with Angular. Responsive Web Design. I work with TS but also JS. I've got 5 years experience working with Unity3D, C# and Java."
+            aboutme[4] = "I define myself as resolute and autodidact person. I am always looking to learn new technologies and improve the already known ones. I'm looking forward to work as a team and prove my worth."
+            aboutme[5] = "I'm studying Multiplatform App Development degree to oficially prove my knowledge."
             aboutme[6] = "Skills"
         }
         return aboutme;
