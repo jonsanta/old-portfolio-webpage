@@ -39,8 +39,8 @@ export abstract class Lang {
             aboutme[1] = "I'm Jon,"
             aboutme[2] = "Web Developer / Game Developer"
             aboutme[3] = "I'm experienced in Front End with Angular. Responsive Web Design. I work with TS but also JS. I've got 5 years experience working with Unity3D, C# and Java."
-            aboutme[4] = "I define myself as resolute and autodidact person. I am always looking to learn new technologies and improve the already known ones. I'm looking forward to work as a team and prove my worth."
-            aboutme[5] = "I'm studying Multiplatform App Development degree to oficially prove my knowledge."
+            aboutme[4] = "I define myself as resolute and autodidact person. I'm interested in learning new techs and improving the already known. Looking to prove myself as a member of a team."
+            aboutme[5] = "I'm actually studying Multiplatform App Development degree to oficially prove my knowledge."
             aboutme[6] = "Skills"
         }
         return aboutme;
