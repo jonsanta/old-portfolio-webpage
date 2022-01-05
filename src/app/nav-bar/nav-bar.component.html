@@ -1,15 +1,17 @@
 <nav [ngClass]="{'nav': true, 'mobile': !computer, 'sticky': sticky}">
     <div id="container">
-        <logo-nav (click)="onClick()" [computer]="computer" class="logo" ></logo-nav>
+        <div class="bar">
+            <logo-nav (click)="onClick()" [computer]="computer" class="logo" ></logo-nav>
         
-        <div *ngIf="computer" class="left">
-            <a (click)="scrollToAnchor('#home')"><left-nav-item content="{{navbarButtons[0]}}"></left-nav-item></a>
-            <a (click)="scrollToAnchor('#aboutme')"><left-nav-item content="{{navbarButtons[1]}}"></left-nav-item></a>
-            <a (click)="scrollToAnchor('#projects')"><left-nav-item content="{{navbarButtons[2]}}"></left-nav-item></a>
-            <a (click)="scrollToAnchor('#contact')"><left-nav-item content="{{navbarButtons[3]}}"></left-nav-item></a>
+            <div *ngIf="computer" class="left">
+                <a (click)="scrollToAnchor('#home')"><left-nav-item content="{{navbarButtons[0]}}"></left-nav-item></a>
+                <a (click)="scrollToAnchor('#aboutme')"><left-nav-item content="{{navbarButtons[1]}}"></left-nav-item></a>
+                <a (click)="scrollToAnchor('#projects')"><left-nav-item content="{{navbarButtons[2]}}"></left-nav-item></a>
+                <a (click)="scrollToAnchor('#contact')"><left-nav-item content="{{navbarButtons[3]}}"></left-nav-item></a>
+            </div>
+    
+            <right-nav (languageChanged)="changeLanguage()" class="right"></right-nav>
         </div>
-
-        <right-nav (languageChanged)="changeLanguage()" class="right"></right-nav>
 
         <div [@menu]="isOpen? 'openned' : 'closed'" class="menu">
             <a (click)="scrollToAnchor('#home')"><dropdown-item content="{{navbarButtons[0]}}"></dropdown-item></a>
