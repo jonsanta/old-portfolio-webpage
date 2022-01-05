@@ -51,13 +51,17 @@ h3{
     padding-top: 20px;
 }
 
+#aboutme h3{
+    padding-bottom: 5px;
+}
+
 #aboutme p{
     font-family: 'Roboto Slab', serif;
     font-size: 15.5px;
     margin: 0;
     color: black;
     text-align: justify;
-    line-height: 30px;
+    padding-top: 8px;
 }
 
 #projects{
