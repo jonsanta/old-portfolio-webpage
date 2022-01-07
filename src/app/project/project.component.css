@@ -26,7 +26,7 @@
     height: 100%;
     top: 100%;
     justify-content: center;
-    transition: background-color 150ms cubic-bezier(1,1,1,-1), top 300ms ease-in-out;
+    transition: background-color 400ms cubic-bezier(1,1,1,-1), top 400ms ease-in-out;
 }
 .container:hover .overlay{
     background-color: rgba(0, 0, 0, 0.7);
