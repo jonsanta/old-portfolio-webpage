@@ -20,15 +20,15 @@ export class ContactComponent implements OnInit {
   { 
     if($event.target.id == "email")
     {
-      window.open("mailto:contact@jonsz.com?Subject=Job Contact", "_blank");
+      window.open("mailto:someemail@server.com?Subject=Job Contact", "_blank");
     }
     else if($event.target.id == "linkedin")
     {
-      window.open("https://www.google.es", "_blank");
+      window.open("https://www.linkedin.com", "_blank");
     }
     else if($event.target.id == "github")
     {
-      window.open("https://github.com/jonsanta", "_blank");
+      window.open("https://github.com", "_blank");
     }
   }
 

@@ -34,7 +34,7 @@ export class ProjectComponent implements OnInit {
   }
 
   onClick(option : string): void{
-    if(option == "repo") window.open("https://github.com/jonsanta/"+this.repository, "_blank");
+    if(option == "repo") window.open("https://github.com/"+this.repository, "_blank");
     else if(option == "pre") window.open(this.preview, "_blank");
   }
 }

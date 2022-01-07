@@ -26,21 +26,21 @@ export abstract class Lang {
         if(document.documentElement.lang == "es")
         {
             aboutme[0] = "SOBRE MÍ";
-            aboutme[1] = "Soy Jon."
-            aboutme[2] = "Web Developer / Game Developer"
-            aboutme[3] = "Tengo experiencia en Front End con Angular. Responsive Web Design. Manejo JS y TS. 5 años de experiencia con Unity3D y lenguajes como C# y Java."
-            aboutme[4] = "Me defino como resolutivo y autodidacta. Siempre busco aprender nuevas tecnologías y mejorar las ya conocidas. Muchas ganas de trabajar en equipo y demostrar mi valia."
-            aboutme[5] = "Actualmente estoy terminando el grado superior de DAM para obtener el titulo."
+            aboutme[1] = "Lorem ipsum dolor sit amet."
+            aboutme[2] = "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            aboutme[3] = "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            aboutme[4] = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            aboutme[5] = ""
             aboutme[6] = "Habilidades"
         }
         else
         {
             aboutme[0] = "ABOUT ME";
-            aboutme[1] = "I'm Jon,"
-            aboutme[2] = "Web Developer / Game Developer"
-            aboutme[3] = "I'm experienced in Front End with Angular. Responsive Web Design. I work with TS but also JS. I've got 5 years experience working with Unity3D, C# and Java."
-            aboutme[4] = "I define myself as resolute and autodidact person. I'm interested in learning new techs and improving the already known. Looking to prove myself as a member of a team."
-            aboutme[5] = "I'm actually studying Multiplatform App Development degree to oficially prove my knowledge."
+            aboutme[1] = "Lorem ipsum dolor sit amet."
+            aboutme[2] = "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            aboutme[3] = "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            aboutme[4] = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            aboutme[5] = ""
             aboutme[6] = "Skills"
         }
         return aboutme;
@@ -52,12 +52,12 @@ export abstract class Lang {
         if(document.documentElement.lang == "es")
         {
             projectText[0] = "PROYECTOS";
-            projectText[1] = "Aqui puedes ver los proyectos en los que he trabajado."
+            projectText[1] = "Proyecto texto 1."
         }
         else
         {
             projectText[0] = "PROJECTS";
-            projectText[1] = "Here you can see the projects I have worked on."
+            projectText[1] = "Project text 1."
         }
         return projectText;
     }
