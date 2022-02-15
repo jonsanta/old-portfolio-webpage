@@ -1,5 +1,5 @@
 import { trigger, state, style} from '@angular/animations';
-import { Component, OnInit, Input, HostListener, Output, EventEmitter} from '@angular/core';
+import { Component, OnInit, OnChanges, Input, HostListener, Output, EventEmitter, NgModule, SimpleChanges} from '@angular/core';
 import { Lang } from '../lang';
 
 @Component({
@@ -23,7 +23,7 @@ import { Lang } from '../lang';
     ]),
   ]
 })
-export class NavBarComponent implements OnInit {
+export class NavBarComponent implements OnInit, OnChanges {
   sticky : boolean;
   isOpen : boolean;
 
@@ -33,15 +33,26 @@ export class NavBarComponent implements OnInit {
 
   @Output() languageChanged : EventEmitter<boolean>;
 
+  @Input() tempSectionOut : number;
+  sectionOut : number;
+
   constructor() { 
     this.sticky = false;
     this.computer = true;
     this.isOpen = false;
     this.navbarButtons = Lang.getNavbarButtons();
     this.languageChanged = new EventEmitter();
+    this.tempSectionOut = 4;
+    this.sectionOut = 4;
   }
 
   ngOnInit(): void {
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if(this.tempSectionOut != this.sectionOut){
+      this.sectionOut = this.tempSectionOut;
+    }
   }
 
   onClick() : void{
@@ -71,7 +82,7 @@ export class NavBarComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event']) // window scroll event
   onScroll() : void {
-    let height; 
+    let height;
     
     if(document.documentElement.clientHeight > 700) height = document.documentElement.clientHeight;
     else height = 700;
